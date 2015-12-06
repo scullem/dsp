@@ -21,7 +21,11 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > The 'ls' command lists all of the contents of a directory.
+'ls -a' lists all contents, including hidden files (files with names that begin with '.')
+'ls -l' lists all contents in the long format. This means that instead of just listing directory or file names, the command also returns information about the directories/files: permissions, element type, owner, group the user belongs to, timestamp of last modification, and directory/file name.
+'ls -lh' is a combination of using the '-l' and '-h' options. Adding the '-h' to 'ls -l' modifies the way the directory/file size is displayed as output so that the suffixes Byte, Kilobyte, Megabyte, Gigabyte, Terabyte, and Petabyte are used to reduce the number of digits displayed for files size to 3 or less. For example, where 'ls -l' would display 2210, 'ls -lh' would display 2.2K
+The following combinations are meaningful: 'ls -al' (provide long format for all contents of directory, including those with dot names), 'ls -alh' (same as 'ls -al' except for changing the way directory/file sizes are displayed). It is not meaningful to use -h without -l, so 'ls -h' and 'ls -ah' would not be meaningful combinations.
 
 ---
 
