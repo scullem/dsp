@@ -38,7 +38,7 @@ What does `xargs` do? Give an example of how to use it.
 * By default 'xargs' takes an input and executes /bin/echo on it. For example, entering 'xargs' alone will prompt the user to provide an input. If a user were to input the text 'hello' followed by 'ctrl + d', the output returned would be 'hello'.
 * The 'xargs' command is most commonly combined with other commands from which the output is a list of file names. In these cases 'xargs' is placed to the right of a '|' after a command and takes the list of file names produced as output from the command to the left of the '|' as input and executes a command across all of those files.
 * **Example:** 'xargs' can be combined with the 'find' command to perform an action (such as deleting or copying) that applies to all files meeting certain criteria. If I wanted to remove all files with a '.wav' extension, I could use the following command to acheive this: find . -name "*.wav" | xargs rm
-**Note:** if any file names have whitespace in them (ie. My File Is Here.wav), then -print0 and -0 need to be added as follows to include these files in the execution of the commands: find . -name "*.wav" -print0 | xargs -0 rm
+* **Note:** if any file names have whitespace in them (i.e. My File Is Here.wav), then -print0 and -0 need to be added as follows to include these files in the execution of the commands: find . -name "*.wav" -print0 | xargs -0 rm
 
 ---
 
