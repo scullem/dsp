@@ -70,6 +70,6 @@ What graphical editor will you use? How did you make your decision? What are som
 * Control + Command + Down - move selected line down
 * Command + Number - switches to an open tab. Command + 1 goes to the 1st tab, Command + 2 - 2nd tab, etc.
 * Shift + Command + F - searches through the whole project
-* Shift + Control + K - deletes selected code or line
-I have not customized my editor yet. I want to get more familiar/comfortable with my options but also more comfortable with what I need it to do in order to better understand how to customize it in the right way.
+* Shift + Control + K - deletes selected code or line</br>
+I have not customized my editor yet. I want to get more familiar/comfortable with my options but also more comfortable with what I need it to do in order to better understand how to customize it in the right way.</br>
 ---
