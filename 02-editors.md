@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I'm going to use vim as my terminal editor. I read a lot of emacs vs. vim posts to try to make my decision, and at the end of it I honestly didn't feel committed to either one compared to the other. In the end, I'm going with vim since one post I read indicated that vim has somewhat better documentation and online help and that it (or other vi-derived editors) are standard on most if not all unix or general purpose linux systems.
 
 ---
 
@@ -61,6 +61,15 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> I'll be using Sublime, primarily because I am already somewhat familiar with using it at my current company. It has a really nice UI, is very fast, and has a lot of options for installing plugins. Some useful keyboard shortcuts are:
+* Control + Command + P - switching between different projects
+* Command + / - commenting/uncommenting
+* Command + ] - Indent
+* Command + [ - Unindent
+* Control + Command + Up - move selected line up
+* Control + Command + Down - move selected line down
+* Command + Number - switches to an open tab. Command + 1 goes to the 1st tab, Command + 2 - 2nd tab, etc.
+* Shift + Command + F - searches through the whole project
+* Shift + Control + K - deletes selected code or line
+I have not customized my editor yet. I want to get more familiar/comfortable with my options but also more comfortable with what I need it to do in order to better understand how to customize it in the right way.
 ---
