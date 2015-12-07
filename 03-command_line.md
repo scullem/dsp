@@ -12,7 +12,17 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >* **man:** Calls up the manual for a given command. Note: to exit out of the documentation and return to the prompt, type 'q'. 
+* **cd:** Changes the working directory. Typing 'cd ~' will return you to your home directory. Typing 'cd ..' moves you up one directory in the hierarch, and can be modified by adding /.. for every level of directory you want to move up.
+* **mkdir:** Creates a new directory. Note that mkdir -p allows you to create multiple intermediate directories in a path in one command without getting the error 'No such file or directory'. If just creating one new directory in a path, it isn’t needed, but if creating multiple new levels it is needed (i.e. if temp/stuff exists, you don’t need -p to create temp/stuff/things but you will need it to create temp/stuff/things/items).
+* **touch:** Creates an empty file. Note: it sets the modifications and access times of a file, but if the file doesn't exist it creates it with default permissions.
+* **less:** Displays the contents of a file. It is similar to 'more' but allows both backward and forward movement through a file. In addition, it doesn't require reading the full file prior to starting which can make it faster with large input files.
+* **find:** Finds files that meet certain criteria. You can use with -print to pass a list of file names to execute additional commands on this set of files (such as | 'less').
+* **cat:** You can use cat to insert text as the contents of a file. Using 'cat > [filename]', followed by text, ending with 'ctrl + d' will insert the text into the specified file. You can also use 'cat' for a similar purpose to 'less'; however, in this case it will dump the whole file onto the display screen with no paging or stopping.
+* **grep:** Looks for patterns (i.e. words, sentences, regular expressions, etc.) within files and writes each input line that matches at least one of the patterns to the standard output. For example, 'grep new *.txt' will search all text files for contents that match the word 'new'.
+* **pushd/popd:** These commands allow you to bookmark a directory you are in, leave it, and come back to it. Using 'pushd' will save the directory location you are in and move you to a new directory. Using 'popd' will then take you back to the last directory you pushed. Using 'pushd' with no other arguments will switch between your current directory and the last one you pushed, creating an easy way to toggle back and forth between two directories.
+* **redirection:** This is not a command but is the act of taking a command and changing where its input/output goes. The '|' takes output from the left and directs it to be input for the command on the right. The '<' sends the input from the file on the right to the program on the left. The '>' takes the output of the command on the left, and writes it to the file on the left. The '>>' takes the output of the command on the left and appends it to the file on the right.
+
 
 ---
 
