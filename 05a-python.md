@@ -12,7 +12,17 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples are both sequence types, and can be used with similar types of operations. They can both contain values of any type (integer, float, string, etc.), and they are indexed by integers.
+
+There is one major difference between lists and tuples that is inherent to the two different sequence types. Tuples are immutable (cannot be modified once created) and lists are mutable (can be modified). So you can’t delete or sort tuples once created. This is the difference that is typically the focus for comparing the two sequence types. Because they are immutable, tuples can be used as keys in dictionaries, whereas lists cannot.
+
+Because of this inherent difference, they are used somewhat differently in practice:
+
+* Their elements are typically accessed by different methods. Tuples are typically accessed by unpacking their elements, where lists are typically accessed by iterating over the list.
+* Lists are usually homogenous (although they are able to contain mixtures of data types), and tuples are typically heterogeneous (the different entries have different meanings). 
+** For example, where a list n = [1,2] might refer to a set of numbers, a tuple n = (1,2) might refer to the x-y coordinates of a location. In this case, the order (although we may care about order) of the numbers in the list can be changed without changing the meaning of each number, whereas changing the order of the numbers of the tuple would change the meaning.
+* Tuples are typically handled as a coherent unit, whereas the elements of a list are often dealt with individually
+
 
 ---
 
