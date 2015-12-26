@@ -30,7 +30,30 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are similar in that they are both mutable, can support some of the same operations (sum(), len(), in, etc.) and can contain a mix of data types. 
+>> 
+>> Their key differences are as follows:
+* Lists can contain any type of object, where sets can only contain objects that are hashable. This means a set cannot contain lists, dictionaries or other sets as its elements because they are all mutable (unless the set is a frozen set)
+* Lists can contain duplicate elements, where sets cannot contain duplicates
+* Lists are ordered, where sets are unordered
+Sets allow operations from math set theory like intersection, union, difference
+* Lists are accessed via indexes, where sets are accessed via hash tables
+>> 
+>> Lists are appropriate in cases with the following requirements:
+* Need a collection of data all in one place, especially if you want to mix types of objects or accept any type of object.
+* Need data to be ordered
+* Need to modify or extend the data (add, remove, replace elements). For example, if you need a stack or a queue, lists can be easily manipulated to add/remove from the beginning or end of a list.
+* Do not need data to be indexed by a custom value (like a key in a dictionary). Lists have a numeric index and the numeric position is required to retrieve an element.
+* Do not need/want data to be unique. 
+>> 
+>> Sets are appropriate in cases with the following requirements:
+* Need a unique set of data. Sets check the uniqueness of elements based on hashes, and will remove duplicates when creating a set object is created.
+* Expect data to change. Sets are mutable.
+* Need to perform mathematical operations like difference, union, intersection, etc.
+* Do not need to store nested lists, sets, or dictionaries in a data structure. These are all mutable and therefore not hashable.
+
+## Need to give examples and explain the performance finding an element
+
 
 ---
 
