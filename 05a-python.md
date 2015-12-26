@@ -52,8 +52,7 @@ Sets allow operations from math set theory like intersection, union, difference
 * Need to perform mathematical operations like difference, union, intersection, etc.
 * Do not need to store nested lists, sets, or dictionaries in a data structure. These are all mutable and therefore not hashable.
 >> 
->> Need to give examples and explain the performance finding an element
-
+>> Need to give examples and explain the performance finding an element. helpful reference: http://www.codersgrid.com/2013/06/19/introduction-to-list-set-tuple-and-dictionary-in-python/
 
 ---
 
