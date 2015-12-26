@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 >>
 >>* Their elements are typically accessed by different methods. Tuples are typically accessed by unpacking their elements, where lists are typically (not always) accessed by iterating over the list.
 * Lists are usually homogenous (although they are able to contain mixtures of data types), and tuples are typically heterogeneous (the different entries have different meanings). 
-- For example, where a list n = [1,2] might refer to a set of numbers, a tuple n = (1,2) might refer to the x-y coordinates of a location. In this case, the order (although we may care about order) of the numbers in the list can be changed without changing the meaning of each number, whereas changing the order of the numbers of the tuple would change the meaning.
+ * For example, where a list n = [1,2] might refer to a set of numbers, a tuple n = (1,2) might refer to the x-y coordinates of a location. In this case, the order (although we may care about order) of the numbers in the list can be changed without changing the meaning of each number, whereas changing the order of the numbers of the tuple would change the meaning.
 * Tuples are typically handled as a coherent unit, whereas the elements of a list are often dealt with individually
 
 
