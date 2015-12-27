@@ -138,6 +138,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    n = s.find('not')
+    b = s.find('bad')
+    if n < b:
+    	return s.replace(s[n:b+3], 'good')
+    else:
+    	return s
     raise NotImplementedError
 
 
