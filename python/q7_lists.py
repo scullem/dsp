@@ -100,4 +100,10 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
+    l = list1 + list2
+    merge = []
+    for items in l:
+        merge.append(items)
+    merge.sort()
+    return merge
     raise NotImplementedError
