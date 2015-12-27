@@ -62,6 +62,9 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
+    def key_last(t):
+        return t[-1]
+    return sorted(tuples, key = key_last)
     raise NotImplementedError
 
 
