@@ -15,6 +15,11 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
+    count = 0
+    for string in words:
+    	if len(string) >= 2 and string[0] == string[-1]:
+    		count +=1
+    return count
     raise NotImplementedError
 
 
@@ -32,6 +37,16 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+    x = []
+    y = []
+    for string in words:
+    	if string[0] == 'x':
+    		x.append(string)
+    	else:
+    		y.append(string)
+    x.sort()
+    y.sort()
+    return x + y
     raise NotImplementedError
 
 
