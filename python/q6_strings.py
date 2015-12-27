@@ -163,4 +163,13 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    ## I'm certain there is a more elegant way to do this, but I don't have time to look for it at present
+    if len(a) % 2 == 0 and len(b) % 2 == 0: 
+    	return a[:len(a)/2] + b[:len(b)/2] + a[len(a)/2:] + b[len(b)/2:]
+    elif len(a) % 2 != 0 and len(b) % 2 != 0: 
+    	return a[:len(a)/2 + 1] + b[:len(b)/2 + 1] + a[len(a)/2 + 1:] + b[len(b)/2 + 1:]
+    elif len(a) % 2 == 0 and len(b) % 2 != 0:
+    	return a[:len(a)/2] + b[:len(b)/2 + 1] + a[len(a)/2:] + b[len(b)/2 + 1:]
+    else: 
+    	return a[:len(a)/2 + 1] + b[:len(b)/2] + a[len(a)/2 + 1:] + b[len(b)/2:]
     raise NotImplementedError
