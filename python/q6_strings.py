@@ -18,6 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count >= 10:
+    	return 'Number of donuts: many'
+    else:
+    	return 'Number of donuts: ' + str(count)
+    
     raise NotImplementedError
 
 
@@ -37,6 +42,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s) < 2:
+    	return ''
+    else:
+    	return s[0:2] + s[-2:]
     raise NotImplementedError
 
 
@@ -57,6 +66,16 @@ def fix_start(s):
     'donut'
     """
     raise NotImplementedError
+    l = list(s)
+    fix = []
+    for i in range(len(l)):
+    	if i == 0:
+    		fix.append(l[i])
+    	elif l[i] == l[0]:
+    		fix.append('*')
+    	else:
+    		fix.append(l[i])
+    return ''.join(fix)
 
 
 def mix_up(a, b):
@@ -74,6 +93,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    return b[0:2] + a[2:] + ' ' + a[0:2] + b[2:]
     raise NotImplementedError
 
 
