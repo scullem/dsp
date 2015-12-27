@@ -1,8 +1,10 @@
-#Q1 -- in progress
+#Q1. Find how many different degrees there are, and their frequencies: Ex: PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
+
+# still working on this
 
 
 
-#Q2
+#Q2. Find how many different titles there are, and their frequencies: Ex: Assistant Professor, Professor
 import csv
 
 faculty = csv.DictReader(open('/Users/sarah/ds/metis/prework/dsp/python/faculty.csv'))
@@ -17,7 +19,7 @@ def get_titles_frequency(dict):
 
 get_titles_frequency(faculty)
 
-#Q3
+#Q3. Search for email addresses and put them in a list. Print the list of email addresses.
 import csv
 
 faculty = csv.DictReader(open('/Users/sarah/ds/metis/prework/dsp/python/faculty.csv'))
@@ -31,7 +33,7 @@ def get_emails(dict):
 get_emails(faculty)
 
 
-#Q4
+#Q4. Find how many different email domains there are (Ex: mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.). Print the list of unique email domains.
 import csv
 
 faculty = csv.DictReader(open('/Users/sarah/ds/metis/prework/dsp/python/faculty.csv'))
