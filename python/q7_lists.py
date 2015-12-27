@@ -44,9 +44,7 @@ def front_x(words):
     		x.append(string)
     	else:
     		y.append(string)
-    x.sort()
-    y.sort()
-    return x + y
+    return sorted(x) + sorted(y)
     raise NotImplementedError
 
 
@@ -104,6 +102,5 @@ def linear_merge(list1, list2):
     merge = []
     for items in l:
         merge.append(items)
-    merge.sort()
-    return merge
+    return sorted(merge)
     raise NotImplementedError
