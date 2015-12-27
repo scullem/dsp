@@ -111,6 +111,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    l = list(s)
+    if len(s) >= 3:
+    	if s[-3:] == 'ing':
+    		l.append('ly')
+    	else:
+    		l.append('ing')
+    return ''.join(l)
     raise NotImplementedError
 
 
