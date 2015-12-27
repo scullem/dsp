@@ -22,7 +22,6 @@ def donuts(count):
     	return 'Number of donuts: many'
     else:
     	return 'Number of donuts: ' + str(count)
-    
     raise NotImplementedError
 
 
@@ -65,7 +64,6 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
     l = list(s)
     fix = []
     for i in range(len(l)):
@@ -76,7 +74,7 @@ def fix_start(s):
     	else:
     		fix.append(l[i])
     return ''.join(fix)
-
+    raise NotImplementedError
 
 def mix_up(a, b):
     """
