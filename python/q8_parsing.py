@@ -6,14 +6,17 @@
 
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
-
 import csv
+football = csv.DictReader(open('/Users/sarah/ds/metis/prework/dsp/python/football.csv'))
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+def diff_goals(dict):
+	min_diff = None
+	min_team = None
+	for row in dict:
+		diff = abs(int(row["Goals"]) - int(row["Goals Allowed"]))
+		if min_diff == None or min_diff > diff:
+			min_diff = diff
+			min_team = row["Team"]
+	print '%s' % (min_team)
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
-
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+diff_goals(football)
