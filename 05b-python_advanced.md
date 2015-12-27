@@ -24,17 +24,56 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> There are three titles. Each is listed with its frequency below:
+* Assistant Professor: 12
+* Associate Professor: 12
+* Professor: 13
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> The following is a list containing the faculty email addresses: ['bellamys@mail.med.upenn.edu',
+ 'warren@upenn.edu',
+ 'bryanma@upenn.edu',
+ 'jinboche@upenn.edu',
+ 'sellenbe@upenn.edu',
+ 'jellenbe@mail.med.upenn.edu',
+ 'ruifeng@upenn.edu',
+ 'bcfrench@mail.med.upenn.edu',
+ 'pgimotty@upenn.edu',
+ 'wguo@mail.med.upenn.edu',
+ 'hsu9@mail.med.upenn.edu',
+ 'rhubb@mail.med.upenn.edu',
+ 'whwang@mail.med.upenn.edu',
+ 'mjoffe@mail.med.upenn.edu',
+ 'jrlandis@mail.med.upenn.edu',
+ 'liy3@email.chop.edu',
+ 'mingyao@mail.med.upenn.edu',
+ 'hongzhe@upenn.edu',
+ 'rlocalio@upenn.edu',
+ 'nanditam@mail.med.upenn.edu',
+ 'knashawn@mail.med.upenn.edu',
+ 'propert@mail.med.upenn.edu',
+ 'mputt@mail.med.upenn.edu',
+ 'sratclif@upenn.edu',
+ 'michross@upenn.edu',
+ 'jaroy@mail.med.upenn.edu',
+ 'msammel@cceb.med.upenn.edu',
+ 'shawp@upenn.edu',
+ 'rshi@mail.med.upenn.edu',
+ 'hshou@mail.med.upenn.edu',
+ 'jshults@mail.med.upenn.edu',
+ 'alisaste@mail.med.upenn.edu',
+ 'atroxel@mail.med.upenn.edu',
+ 'rxiao@mail.med.upenn.edu',
+ 'sxie@mail.med.upenn.edu',
+ 'dxie@upenn.edu',
+ 'weiyang@mail.med.upenn.edu']
 
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> There are four unique email domains: {'@cceb.med.upenn.edu', '@email.chop.edu', '@mail.med.upenn.edu', '@upenn.edu'}
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
