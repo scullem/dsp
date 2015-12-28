@@ -93,7 +93,7 @@ bellamys@mail.med.upenn.edu
 warren@upenn.edu
 bryanma@upenn.edu
 ```
-
+>> Code has been placed in advanced_python_csv.py, and the file emails.csv has been added to the repository
 ---
 
 ### Part III - Dictionary
@@ -141,4 +141,7 @@ Place your code in this file: [advanced_python_dict.py](python/advanced_python_d
 If you're all done and looking for an extra challenge, then try the below problem:  
 
 ### [Markov](python/markov.py) (Optional)
+
+>> I did not have time to complete this by the deadline but will attempt it before the program starts
+
 
