@@ -93,7 +93,8 @@ bellamys@mail.med.upenn.edu
 warren@upenn.edu
 bryanma@upenn.edu
 ```
->> Code has been placed in advanced_python_csv.py, and the file emails.csv has been added to the repository
+>> Code has been placed in advanced_python_csv.py and emails.csv file has been added to the repository
+
 ---
 
 ### Part III - Dictionary
