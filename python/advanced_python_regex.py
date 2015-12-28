@@ -1,8 +1,22 @@
 #Q1. Find how many different degrees there are, and their frequencies: Ex: PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
-# still working on this
+import csv
 
+faculty = csv.DictReader(open('/Users/sarah/ds/metis/prework/dsp/python/faculty.csv'))
 
+def get_degree_frequency(dict):
+	import string
+	degrees = []
+	exclude = set(string.punctuation)
+	for row in dict:
+		s = ''.join(ch for ch in row[" degree"] if ch not in exclude)
+		l = s.split()
+		for item in l:
+			degrees.append(item)
+	d = {x: degrees.count(x) for x in degrees}
+	return d
+
+get_degree_frequency(faculty)
 
 #Q2. Find how many different titles there are, and their frequencies: Ex: Assistant Professor, Professor
 import csv
