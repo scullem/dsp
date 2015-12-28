@@ -86,7 +86,26 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are used to construct lists, essentially a compact for-loop for list building where at each iteration an element is appended to the list being built. They can be nested inside other list comprehensions to accomplish more complex tasks in a single statement, but this can easily become difficult to read.
+>> 
+>> The basic structure of a list comprehension is: [ <output value>  for <element> in <list>  <optional criteria>  ]. Given a list l = [1, 2, 3], the list comprehension [x **2 for x in l if x > 1] returns [4, 9]
+>> 
+>> * Example compared to map: l = [‘This’, ‘is’, ‘a’, ‘list’, ‘of’, ‘words’], build a list of lists where each list element contains the uppercase, lowercase, and length of each word in l
+ * List comprehension - example = [[w.upper(), w.lower(), len(w)] for w in l]
+ * Map with lambda - example = map(lambda w: [w.upper(), w.lower(), len(w)], l)
+* Example compared to filter: l = [1, 2, 3, 4, 5, 6, 7, 8, 9], filter the list to contain only values less than 7
+ * List comprehension - example = [x for x in l if x < 7]
+ * Filter with lambda - example = filter(lambda x: x < 7, l)
+>> 
+>> It is generally not advisable to use list comprehensions in cases where the rules of construction are too complicated to be expressed with "for" and "if" statements. In this case, it is better to use map() or filter() with the appropriate function. Oftentimes, a list comprehension is more efficient and easier to read, in which cases it is preferable to use the list comprehension.
+>> 
+>> * Dictionary comprehension:
+ * Follows a basic structure of: {<key>: <value> for <element> in <list> <optional criteria>}
+ * For example, given a list of tuples where each tuple contains four elements the first of which is the key for the dictionary: d = {a:[b,c,d] for a,b,c,d in tuples}
+* Set comprehension:
+ * Allows the creation of a set without using the set() function, following a basic structure of: {<output value>  for <element> in <list>  <optional criteria>}
+ * For example, create a set of numbers 0-19: s = {x for x in range(20)}
+
 
 ---
 
