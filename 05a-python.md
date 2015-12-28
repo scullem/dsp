@@ -60,7 +60,19 @@ Sets allow operations from math set theory like intersection, union, difference
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python’s lambda function is an anonymous function, meaning it is not bound to a name. It is often used with concepts like filter(), map(), and reduce().
+>> 
+>> A lambda function can accomplish similar tasks to a normal function, but has several key features:
+* The lambda function does not include a return statement, but rather contains an expression that is returned
+* A lambda definition can can be put anywhere a function is expected
+* The lambda does not need to be assigned to a variable
+* Lambda is not appropriate in cases where a function is too complex to write in a single line ro where the function will be reused multiple times
+>>
+>>Examples: 
+* Using filter: * l = [1, 2, 5, 19, 40], print filter(lambda x: x % 2 == 0, l) --> [2, 40] * filters a list to return only those divisible by 2
+* Using map: * l = [1, 2, 5, 19, 40], print map(lambda x: x + 1, l) --> [2, 3, 6, 20, 41] * converts a list to one where each element is increased by the value of one
+* As a key in sorted: * sorted(tuples, key = lambda last: last[-1]) * Given an a list of tuples, sorts the list based on the last value in each tuple
+
 
 ---
 
