@@ -15,7 +15,6 @@ def randn(n):
 		rand = random.random()
 		l.append(rand)
 	return l
-
 rand1k = randn(1000)
 ```
 >> * **Step 3** - Generate a cdf of the 1000 random numbers and plot to cdf to visually inspect the result:
