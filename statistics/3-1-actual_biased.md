@@ -10,7 +10,7 @@ import thinkplot
 import chap01soln
 nsfg_resp = chap01soln.ReadFemResp()
 ```
->> * **Step 2** - Define the function provided in Thinkstats that uses the actual distribution of the number of households with a certain number of children to build a the biased distribution that would result from actually sampling children to find out how many below to a household with a certain number of children. Note: the code includes the following: 
+>> * **Step 2** - Define the function provided in Thinkstats that uses the actual distribution of the number of households with a certain number of children to build a the biased distribution that would result from actually sampling children to find out how many below to a household with a certain number of children. Note the function's code includes the following: 
  * Takes as an input the actual pmf and the desired label for the new, biased pmf
  * Creates a copy of the actual pmf, assigning it the new label
  * For each response value and it's probability in the actual pmf, multiplies the probability by the response value. For example, all of the households with 0 children are multiplied by 0 and therefore are no longer represented in the biased pmf. If there are no children in the household, there would be no children to sample to represent 0 child households
