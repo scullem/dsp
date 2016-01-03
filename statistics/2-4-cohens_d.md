@@ -3,12 +3,12 @@
 >> * Step 1 - Import libraries, read in nsfg dataset, and create dataframes to subset out live first births and live other births:
 >>
 >>    import thinkstats2
-    import nsfg
-    import pandas as pd
-    import math
-    nsfg = nsfg.ReadFemPreg()
-    first = nsfg[(nsfg.outcome == 1) & (nsfg.birthord == 1)]
-    other = nsfg[(nsfg.outcome == 1) & (nsfg.birthord != 1)]
+import nsfg \n
+import pandas as pd \n
+import math \n
+nsfg = nsfg.ReadFemPreg() \n
+first = nsfg[(nsfg.outcome == 1) & (nsfg.birthord == 1)] \n
+other = nsfg[(nsfg.outcome == 1) & (nsfg.birthord != 1)] \n
 >>
 >>* Step 2 - Recreate the function defined in Thinkstats to compute Cohen's d:
 >>
