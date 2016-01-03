@@ -1,16 +1,15 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
->> * Step 1 - Import libraries, read in nsfg dataset, and create dataframes to subset out live first births and live other births:
->>'''python
+* Step 1 - Import libraries, read in nsfg dataset, and create dataframes to subset out live first births and live other births:
+'''python
 import thinkstats2
-import nsfg \n
-import pandas as pd \n
-import math \n
-nsfg = nsfg.ReadFemPreg() \n
-first = nsfg[(nsfg.outcome == 1) & (nsfg.birthord == 1)] \n
-other = nsfg[(nsfg.outcome == 1) & (nsfg.birthord != 1)] \n
+import nsfg
+import pandas as pd
+import math
+nsfg = nsfg.ReadFemPreg()
+first = nsfg[(nsfg.outcome == 1) & (nsfg.birthord == 1)]
+other = nsfg[(nsfg.outcome == 1) & (nsfg.birthord != 1)]
 '''
->>
 >>* Step 2 - Recreate the function defined in Thinkstats to compute Cohen's d:
 >>
 >>'''
