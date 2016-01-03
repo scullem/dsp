@@ -17,13 +17,13 @@ def randn(n):
 	return l
 rand1k = randn(1000)
 ```
->> * **Step 3** - Generate a cdf of the 1000 random numbers and plot to cdf to visually inspect the result:
+>> * **Step 3** - Generate a cdf of the 1000 random numbers and plot cdf to visually inspect the result:
 ```python
 cdf = thinkstats2.Cdf(rand1k, label = 'random cdf')
 thinkplot.Cdf(cdf)
 thinkplot.Show(xlabel = 'value', ylabel = 'CDF')
 ```
->> * **Step 4** - Generate a pmf of the 1000 random numbers and plot to pmf to visually inspect the result:
+>> * **Step 4** - Generate a pmf of the 1000 random numbers and plot pmf to visually inspect the result:
 ```python
 pmf = thinkstats2.Pmf(rand1k, label = 'random pmf')
 thinkplot.Pmf(pmf)
