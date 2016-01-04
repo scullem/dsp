@@ -24,7 +24,7 @@ def Estimate_exp(n, m, lam):
 		L = 1 / np.mean(xs)
 		lams.append(L)
 	return lams
-	```
+```
 >> * **Step 3** - Define a function that generates the root mean squared error based on the code provided in Thinkstats to allow calculation of standard error in the experiment(s):
 ```python
 def RMSE(estimates, actual):
