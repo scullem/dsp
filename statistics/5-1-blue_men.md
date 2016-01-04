@@ -28,4 +28,4 @@ mu_m = 178
 sig_m = 7.7
 perc_pop(ft1 = 5, inch1 = 10, ft2 = 6, inch2 = 1, mu = mu_m, sig = sig_m)
 ```
->> * **Step 4** - Interpret results. The function returns a value approximately equal to 34%. This means that 34% of the US male population is in teh appropriate height range to join Blue Man Group.
+>> * **Step 5** - Interpret results. The function returns a value approximately equal to 34%. This means that 34% of the US male population is in teh appropriate height range to join Blue Man Group.
