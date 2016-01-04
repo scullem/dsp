@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import math
 import thinkplot
-
+#Read data
 nsfg = nsfg.ReadFemPreg()
 live = nsfg[nsfg.outcome == 1]
 ```
