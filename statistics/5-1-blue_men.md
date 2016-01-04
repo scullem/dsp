@@ -22,3 +22,10 @@ def perc_pop(ft1, inch1, ft2, inch2, mu, sig):
 	perc =  scipy.stats.norm.cdf(height2, loc = mu, scale = sig) - scipy.stats.norm.cdf(height1, loc = mu, scale = sig)
 	return perc
 ```
+>> * **Step 4** - Call the function to calculate the percent of the US male population that is between the height range of 5'10" and 6'1".
+```python
+mu_m = 178
+sig_m = 7.7
+perc_pop(ft1 = 5, inch1 = 10, ft2 = 6, inch2 = 1, mu = mu_m, sig = sig_m)
+```
+>> * **Step 4** - Interpret results. The function returns a value approximately equal to 34%. This means that 34% of the US male population is in teh appropriate height range to join Blue Man Group.
