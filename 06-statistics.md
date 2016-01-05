@@ -89,7 +89,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The core difference between Bayesian and Frequentist schools of thought comes down to how they view probability. Frequentist statistics is generally considered "classical statistics" and in this school of thought probability is the long-run frequency of events. Alternatively, in the Bayesian school of thought, probability is a measure of belief/confidence that an event will occur. The Bayesian method follows a more natural intuition about probability, as it mirrors the way we gather evidence in our daily life to inform our differing beliefs and the fact that different people with different information will assign a different degree of confidence to their beliefs. Perhaps most importantly, Bayesian statistics allows for updating beliefs about the probability of an event when new evidence is observed, allowing the statistician to change the weight of the prior belief to be higher or lower. For practical purposes, there is a key distinction in the answer provided by a frequentist vs. a Bayesian to the same question. The frequentist returns an estimate and a Bayesian returns a probabilities assigned to possible outcomes. In doing so, Bayesian statistics preserves uncertainty at all times. 
 
 ---
 
